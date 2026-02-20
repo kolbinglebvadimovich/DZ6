@@ -1,23 +1,20 @@
 #include <iostream>
 
-int main()
+void printHello() // Обьевление (прототип) функции.
 
 {
-    int veriable1{ 200 };
-    int veriable2{ 500 };
-    
-    std::cout << std::noboolalpha;
-    std::cout << veriable1 == veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 += veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 > veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 < veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 != veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 >= veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 <= veriable2 << std::endl; //Решение примера.
 
-    return EXIT_SUCCESS;
+    std::cout << "Bye bye Gleb!!!" << std::endl;
 
 }
+
+int main()
+{
+
+    printHello();
+
+    return EXIT_SUCCESS;
+   
 
 
 
