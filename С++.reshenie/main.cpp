@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv)
 {
-    int a = 1, b = 5;
+    int a = 5, b = 10;
 
     int s = sum( a , b );
     int dif = diff( a , b );
@@ -19,33 +19,44 @@ int main(int argc, char** argv)
     return 0;
 }
 
-int main(int argc, char** argv)
-{
 
-    int value = 5, power = 2, result = 1; // Значение раз.
-    value = 3, power = 2, result = 1; // Значение два.
-    value = 4, power = 3, result = 1; // Значение три.
-    for(int i = 0, i < power; i++)
+void calculateAndPrintPower(int value, int power)
+{
+    int result = 1;
+    for (int i = 0; i < power; i++) 
     {
         result *= value;
     }
-    std::cout << value << " в степени " << power << " = " << result << std::endl; // Вывведение в консоль.
-
+    std::cout << value << " в степени " << power << " = " << result << std::endl;
+}
+{
+    calculateAndPrintPower(5, 2);
+    calculateAndPrintPower(3, 3);
+    calculateAndPrintPower(4, 4);
 
     return 0;
 }
-int main(int argc, char** argv)
+
+
 {
-    std::cout << "Введитe число" << std::endl;
-    for(int a = 0, b = 1, e = 2, r = 3, g = 5.)
-    std::cout << "Введитe число" << std::endl;
-    std::cin << variable << std::endl;
-    std::cout << variable << std::endl;
+    unsigned long long fibonacci(unsigned n)
+    
+    if (n == 0)
+        return 0;
+    if (n == 1)
+        return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
+{
 
 
+    std::cout << "Введите количество чисел последовательности Фибоначчи: "; << std::endl;
+    std::cin >> count >>
+    {
+    std::cout << "Последовательность Фибоначчи (" << count << " чисел):" << std::endl;
 
+        std::cout << fibonacci(i) << " " << std::endl;
+    }
 
-
-
-
+    return 0;
+}
